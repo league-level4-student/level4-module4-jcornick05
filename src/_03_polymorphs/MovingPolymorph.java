@@ -3,17 +3,17 @@ package _03_polymorphs;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class BluePolymorph extends Polymorph {
+public class MovingPolymorph extends Polymorph {
 	private int width = 50;
 	private int height = 50;
 
-	BluePolymorph(int x, int y) {
+	MovingPolymorph(int x, int y) {
 		super(x, y);
 	}
 
 	@Override
 	public void draw(Graphics g) {
-		g.setColor(Color.blue);
+		g.setColor(Color.yellow);
 		g.fillRect(x, y, width, height);
 	}
 
@@ -32,5 +32,8 @@ public class BluePolymorph extends Polymorph {
 	public void setHeight(int height) {
 		this.height = height;
 	}
-
+	
+	public void update() {
+		
+	}
 }
